@@ -1,11 +1,13 @@
 class Owner
-  attr_reader :name, :species
+  attr_reader :name, :species, :cats, :dogs
 
   @@all = []
 
   def initialize(name)
     @name = name
     @species = "human"
+    @cats=[]
+    @dogs=[]
     @@all<<self
   end
 
@@ -30,7 +32,10 @@ class Owner
   end
 
   def buy_cat(name)
-    Cat.new(name, self)
+    name=Cat.new(name, self)
   end
+
+  def cats
+
 
 end
