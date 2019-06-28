@@ -9,6 +9,7 @@ class Dog
     @name = name
     @owner = owner
     @mood = "nervous"
+    @owner.buy_dog(name)
 end
 
   def self.all
