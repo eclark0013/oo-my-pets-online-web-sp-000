@@ -60,7 +60,7 @@ class Owner
     @dogs.each {|dog| dog.owner = nil}
     @dogs.clear
     @cats.each {|cat| cat.mood = "nervous"}
-    @cats.each {|cat| cat.owner = "nil"}
+    @cats.each {|cat| cat.owner = nil}
     @cats.clear
   end
 
