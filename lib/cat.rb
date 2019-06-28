@@ -8,7 +8,8 @@ class Cat
     @name = name
     @owner = owner
     @mood = "nervous"
-  end
+    @owner.new_cat(self)
+end
 
   def self.all
     @@all
