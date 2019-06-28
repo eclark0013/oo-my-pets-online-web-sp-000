@@ -43,6 +43,10 @@ class Owner
     @dogs<<dog
   end
 
+  def new_cat(cat)
+    @cats<<cat
+  end
+
   def walk_dogs
     @dogs.each {|dog| dog.mood = "happy"}
   end
