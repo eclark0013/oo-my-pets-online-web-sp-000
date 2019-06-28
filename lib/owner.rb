@@ -39,6 +39,10 @@ class Owner
     @dogs<<Dog.new(name, self)
   end
 
+  def new_dog(dog)
+    @dogs<<dog
+  end
+
   def walk_dogs
     @dogs.each {|dog| dog.mood = "happy"}
   end
